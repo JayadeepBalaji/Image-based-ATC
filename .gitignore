@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# Virtual env
+venv/
+.venv/
+
+# App artifacts
+data/
+uploads/
+*.db
+*.pkl
+*.model
+*.csv
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
