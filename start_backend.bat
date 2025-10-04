@@ -5,11 +5,8 @@ echo.
 REM Activate virtual environment
 call venv\Scripts\activate
 
-REM Change to backend directory
-cd backend
-
-REM Start the FastAPI server
-echo Backend server starting on http://localhost:8000
+REM Run from project root so 'backend' is a package
+echo Backend server starting on http://127.0.0.1:8000
 echo Press Ctrl+C to stop the server
 echo.
-python main.py
+python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000 --reload
